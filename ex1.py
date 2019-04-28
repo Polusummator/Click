@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 from tkinter import *
 import os.path
 from cryptography.fernet import Fernet
@@ -89,6 +88,8 @@ def main():
             label = Label(root2, text='Введите своё имя', font='Fixedays 14', fg='black')
             vvod = Entry(root2, width=15, font='Fixedays 16', fg='black', bd=2)
             ok = Button(root2, width=3, height=1, font='Fixedays 14', fg='white', bg='green', text='OK')
+            pred = Label(root2, text='В имени можно использовать только буквы!\nПробел и другие знаки использовать нельзя!', font='Fixedays 10', fg='AntiqueWhite4')
+            pred.place(x=10, y=100)
             label.pack()
             vvod.place(x=25, y=60)
             ok.place(x=240, y=55)
