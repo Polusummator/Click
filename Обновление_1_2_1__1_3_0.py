@@ -36,10 +36,10 @@ def crypto(text):
 
 def nice():
     root1 = Tk()
-    root1.geometry('400x80+630+300')
+    root1.geometry('450x100+630+300')
     root1.title('UPGRADE')
     label1 = Label(root1, text='Подготовка системы завершена!', font='Fixedays 18', fg='brown')
-    label2 = Label(root1, text='Для начала игры откройте последнюю версию приложения', font='Fixedays 10', fg='AntiqueWhite4')
+    label2 = Label(root1, text='Для начала игры откройте последнюю версию приложения\nУстановите последнюю версию приложения в папку C:/Click_Game\nПоследующие версии также устанавливайте в эту папку', font='Fixedays 10', fg='AntiqueWhite4')
     label1.pack()
     label2.pack()
     root1.mainloop()
@@ -70,4 +70,6 @@ else:
             b_cr = crypto(b)
             boost.write(b_cr)
             boost.close()
+            path = r'C:\Click_Game'
+            os.mkdir(path)
             nice()
