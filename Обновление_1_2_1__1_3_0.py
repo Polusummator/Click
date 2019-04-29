@@ -8,7 +8,7 @@ def error():
     root1.geometry('300x110+630+300')
     root1.title('ERROR')
     label1 = Label(root1, text='Ошибка!', font='Fixedays 18', fg='brown')
-    label2 = Label(root1, text='Поверьте, есть ли у вас папка C:/Click\nПроверьте, есть ли у вас в этой папке файлы\nLogin.txt и Click.txt', font='Fixedays 10', fg='AntiqueWhite4')
+    label2 = Label(root1, text='Проверьте, есть ли у вас папка C:/Click\nПроверьте, есть ли у вас в этой папке файлы\nLogin.txt и Click.txt', font='Fixedays 10', fg='AntiqueWhite4')
     label1.pack()
     label2.pack()
     root1.mainloop()
